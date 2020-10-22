@@ -51,5 +51,4 @@ public class Product {
     @UpdateTimestamp
     private Date lastUpdated;
 
-
 }
