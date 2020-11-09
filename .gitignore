@@ -36,3 +36,8 @@ build/
 mvnw
 mvnw.cmd
 .mvn
+
+###Spring Files###
+application.properties
+
+
