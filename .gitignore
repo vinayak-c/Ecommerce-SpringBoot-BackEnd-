@@ -37,7 +37,7 @@ mvnw
 mvnw.cmd
 .mvn
 
-###Spring Files###
+###Spring Resources###
 application.properties
 
 
