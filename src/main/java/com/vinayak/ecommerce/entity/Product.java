@@ -1,6 +1,8 @@
 package com.vinayak.ecommerce.entity;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -50,5 +52,4 @@ public class Product {
     @Column(name="last_updated")
     @UpdateTimestamp
     private Date lastUpdated;
-
 }
