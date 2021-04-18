@@ -11,10 +11,6 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurer;
 import org.springframework.http.HttpMethod;
 
 import javax.persistence.EntityManager;
-import javax.persistence.metamodel.EntityType;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 @Configuration
