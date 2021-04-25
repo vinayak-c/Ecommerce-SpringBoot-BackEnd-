@@ -40,6 +40,15 @@ public class CheckoutServiceImpl implements CheckoutService{
 
         //populate customer with order
         Customer customer=purchase.getCustomer();
+
+        //check if user is existing cutomer
+        String theEmail = customer.getEmail();
+
+        Customer customerFromDB = customerRepository.findByEmail(theEmail);
+
+        if(customerFromDB != null){
+            customer=customerFromDB;
+        }
         customer.add(order);
 
         //save to the DB
