@@ -1,9 +1,6 @@
 package com.vinayak.ecommerce.config;
 
-import com.vinayak.ecommerce.entity.Country;
-import com.vinayak.ecommerce.entity.Product;
-import com.vinayak.ecommerce.entity.ProductCategory;
-import com.vinayak.ecommerce.entity.State;
+import com.vinayak.ecommerce.entity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
@@ -44,6 +41,9 @@ public class MyDataRestConfig implements RepositoryRestConfigurer {
 
         // disable HTTP methods for Country: PUT, POST and DELETE
         disableHttpMethods(Country.class,config, theUnsupportedActions);
+
+        // disable HTTP methods for Country: PUT, POST and DELETE
+        disableHttpMethods(Order.class,config, theUnsupportedActions);
 
         exposeIds(config);
 
